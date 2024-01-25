@@ -175,9 +175,61 @@ h1,h2,h3,h4,h5,h6{
     grid-gap: 15px;
     align-items: center;
 }
-.key-benefits ul li{
+
+.key-ingredients ul,
+.howtouse ul{
+    display: grid;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    grid-gap: 20px;
+    align-items: center;
+}
+.key-benefits ul li,
+.key-ingredients ul li{
     display: grid;
     grid-template-columns: 1fr 3fr;
     grid-gap: 10px;
     align-items: center;
+}
+.key-ingredients ul li{
+    grid-template-columns: 1fr 5fr;
+    grid-gap: 5px;
+}
+.key-ingredients ul li p{
+    margin: 0;
+    line-height: 1.4;
+    letter-spacing: .01rem;
+    font-size: 15px;
+    margin-top: 3px;
+}
+#accordion details{
+    background-color: #e7e7e7;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 0px 00px 0px 20px;
+}
+#accordion summary{
+    display: flex;
+    position: relative;
+    line-height: 1;
+    box-sizing: border-box;
+    padding: 1.3rem 0;
+}
+#accordion .summary-title{
+    margin-top: 5px;
+    padding: 0;
+    display: flex;
+    flex: 1;
+}
+summary .icon-caret {
+    position: absolute;
+    height: 0.6rem;
+    right: 1.5rem;
+    top: calc(50% - 0.2rem);
+}
+#accordion .accordian-content{
+    padding-bottom: 10px;
+    box-sizing: border-box;
 }
