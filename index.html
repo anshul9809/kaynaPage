@@ -12,17 +12,17 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
 </head>
-<body class="position-relative">
+<body>
 
 <section class="container my-5">
   <div class="row">
     <div class="col-lg-6">
       <!-- Main Carousel -->
-        <div class="sticky-top">
+        <div class="sticky-top carousel-div">
             <div class="owl-carousel" id="main-carousel">
                 <!-- Main Carousel Content Goes Here -->
                 <div class="item">
-                    <div class="modal-opener" id="modal-opener">
+                    <div class="" id="">
                         <div class="light-box">
                             <svg aria-hidden="true" focusable="false" class="icon icon-plus" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66724 7.93978C4.66655 7.66364 4.88984 7.43922 5.16598 7.43853L10.6996 7.42464C10.9758 7.42395 11.2002 7.64724 11.2009 7.92339C11.2016 8.19953 10.9783 8.42395 10.7021 8.42464L5.16849 8.43852C4.89235 8.43922 4.66793 8.21592 4.66724 7.93978Z" fill="currentColor"></path>
@@ -291,34 +291,89 @@
         </ul>
     </div>
 </section>
-<section class="container testimonials">
-    
+
+<section class="container py-5">
+    <div class="row">
+        <div class="col-12 product-banners">
+            <img src="img/first-banner.webp" alt="" class="img-fluid" width="100%" />
+            <img src="img/banner-2.webp" alt="" class="img-fluid" width="100%" />
+            <img src="img/banner-3.webp" alt="" class="img-fluid" width="100%" />
+            <img src="img/banner-4.webp" alt="" class="img-fluid" width="100%" />
+        </div>
+    </div>
 </section>
 
-<!-- <div id="image-modal">
-    <div class="close-modal" id="close-modal">
-        <i class="fa fa-multiply close"></i>
+<section class="py-5 testimonial_detail">
+    <div class="container">
+        <div class="our_product_heading pb-3">
+            <h2 style="text-transform: uppercase; line-height: 3rem;">Hear from the users</h2>
+            <div class="testimonial__slides owl-carousel">
+                <div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div><div class="testimonial_card mt-5 item">
+                    <p class="t__content">We strongly believe that it is our responsibility to contribute to the welfare of the planet. That's why we only leverage organic, biodegradable, and toxin-free ingredients for preparing products.</p>
+                    <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="{{ $testimonial->name }}" class="img-fluid w-100">
+                    <span class="d-block">Dhruv Dhiman</span>
+                    <p class="description">Professional Athelete</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div>
-        <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="" class="img-fluid">
-    </div>
-    <div>
-        <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="" class="img-fluid">
-    </div>
-    <div>
-        <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="" class="img-fluid">
-    </div>
-    <div>
-        <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="" class="img-fluid">
-    </div>
-    <div>
-        <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="" class="img-fluid">
-    </div>
-    <div>
-        <img src="img/product_gallery1692335956Herbal_Shampoo_(Benefits_).jpg" alt="" class="img-fluid">
-    </div>
-</div> -->
+</section>
 
+
+<section class="py-5 way-of-us">
+    <div class="way-of-us-banner"></div>
+</section>
+<div id="myModal" class="product-media-modal__dialog">
+    <button id="modalCloseBtn" type="button" class="product-media-modal__toggle" aria-label="Close">
+        <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" class="icon icon-close" fill="none" viewBox="0 0 18 17">
+            <!-- Close icon SVG path -->
+        </svg>
+    </button>
+
+    <div class="product-media-modal__content color-background-1 gradient">
+        <!-- Image gallery content goes here -->
+    </div>
+</div>
 <!-- Bootstrap JS and Popper.js -->
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
